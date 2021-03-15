@@ -22,8 +22,8 @@ let handler = async function (m, { text, usedPrefix }) {
 }
 handler.help = ['daftar']
 handler.tags = ['economy']
-
 handler.command = /^(buyatm|buatatm)$/i
+handler.register = true 
 
 module.exports = handler
 
