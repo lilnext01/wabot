@@ -2,7 +2,7 @@ let handler = async (m, { conn, text, command, args }) => {
   let user = global.DATABASE._data.users[m.sender]
   let count = command.replace(/^dep/i, '')
   count = count ? /all/i.test(count) ? Math.floor(global.DATABASE._data.users[m.sender].exp) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
-  if (user.isAtm === false) throw 'Anda Belum Memiliki Atm' 
+  if (user.isAtm === false) throw 'Anda Belum Memiliki Atm\nKetik *.buyatm* Untuk Membeli Atm' 
   if (global.DATABASE._data.users[m.sender].uang >= count) {
     global.DATABASE._data.users[m.sender].uang -= count
     global.DATABASE._data.users[m.sender].bank += count
