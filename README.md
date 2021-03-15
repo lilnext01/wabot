@@ -1,4 +1,4 @@
-# wabot-aq
+# wabot
 Simple WhatsApp Bot
 
 ### FOR TERMUX USER
