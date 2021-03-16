@@ -1,5 +1,5 @@
 # wabot
-Simple WhatsApp Bot
+WhatsApp Bot Dari [`Nurutomo`](https://GitHub.com/Nurutomo) Saya Cuma Recode Doang
 
 ### FOR TERMUX USER
 ```bash
