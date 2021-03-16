@@ -1,7 +1,8 @@
 const { createHash } = require('crypto')
 let handler = async function (m, { text, usedPrefix }) {
   let user = global.DATABASE._data.users[m.sender]
-  if (50000 > user.uang) throw 'Coins Anda Tidak Cukup Untuk Membuat Atm'
+  let kurang = Math.ceil(50000 - user.uang) 
+  if (50000 > user.uang) throw `Coins Anda Kurang *${kurang}* Untuk Membuat Atm`
   if (user.age < 17) throw 'Umur Anda Belum cukup Untuk Membuat Atm'
   if (user.isAtm === true) throw `Anda Sudah Memiliki Atm`
   user.uang -= 50000
