@@ -12,10 +12,6 @@ WhatsApp Bot Dari [`Nurutomo`](https://GitHub.com/Nurutomo) Saya Cuma Recode Doa
 > cd wabot-aq
 > npm install
 ```
-###### Run
-```bash
-> node . [<session name>] (session name is optional)
-```
 
 ---------
 
